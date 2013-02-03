@@ -1,0 +1,49 @@
+{
+    "name": "keltanas/sandbox",
+    "require": {
+        "keltanas/site-forever-cms": "dev-master",
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.1.*",
+        "smarty/smarty": "3.1.*",
+        "firephp/firephp-core": "dev-master",
+        "ccampbell/chromephp": "dev-master",
+        "tonytomov/jqGrid" : "4.4.4"
+    },
+    "authors": [
+        {
+            "name": "keltanas",
+            "email": "keltanas@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"tonytomov/jqGrid",
+                "version":"4.4.4",
+                "source":{
+                    "type":"git",
+                    "url":"https://github.com/tonytomov/jqGrid",
+                    "reference":"master"
+                }
+            }
+        }
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "Module" : "lib/",
+            "Forms" : "lib/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Sfcms\\JqGrid\\ComposerHandler::installAssets"
+        ],
+        "post-update-cmd": [
+            "Sfcms\\JqGrid\\ComposerHandler::installAssets"
+        ]
+    },
+    "extra": {
+        "sfcms-static-dir" : "static"
+    }
+}
