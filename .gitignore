@@ -1,8 +1,9 @@
 /.idea/
 /files/
 /thumbs/
-/images/
-/misc/
+/images
+/misc
+/runtime
 /logger.txt
 /vendor/
 /static/
