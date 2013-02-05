@@ -31,7 +31,7 @@ return array(
         'login'     => 'siteforever',
         'password'  => 'siteforever',
         'host'      => 'localhost',
-        'database'  => 'siteforever',
+        'database'  => 'siteforever_kronma',
         'debug'     => true,
         'migration' => true,
         //'autoGenerateMeta' => true,

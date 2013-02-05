@@ -1,0 +1,1 @@
+<p>Module Foo</p>

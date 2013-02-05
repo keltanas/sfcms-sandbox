@@ -1,5 +1,5 @@
 {
-    "hash": "c6744f6f4fda2a60e7aa7a8f939ea075",
+    "hash": "d5033f9905c72c57830786d1a25a22bc",
     "packages": [
         {
             "name": "ccampbell/chromephp",
@@ -155,12 +155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/keltanas/SiteForeverCMS",
-                "reference": "3ea38f14b52f1dcc5bd175a699e5a5cd3f446d00"
+                "reference": "4e92b6dec58d652dc2fef5bbff11de867fe36ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/keltanas/SiteForeverCMS/zipball/3ea38f14b52f1dcc5bd175a699e5a5cd3f446d00",
-                "reference": "3ea38f14b52f1dcc5bd175a699e5a5cd3f446d00",
+                "url": "https://api.github.com/repos/keltanas/SiteForeverCMS/zipball/4e92b6dec58d652dc2fef5bbff11de867fe36ccf",
+                "reference": "4e92b6dec58d652dc2fef5bbff11de867fe36ccf",
                 "shasum": ""
             },
             "require": {
@@ -178,22 +178,23 @@
                 "phpunit/phpunit": "3.7.*",
                 "phpunit/phpunit-mock-objects": "1.2.*"
             },
-            "time": "2013-02-03 13:12:49",
+            "time": "2013-02-05 10:55:36",
             "type": "library",
             "extra": {
                 "sfcms-static-dir": "static"
             },
             "autoload": {
                 "psr-0": {
-                    "": "class/",
+                    "": [
+                        "class/",
+                        "lib/"
+                    ],
                     "Sfcms": "class/",
                     "Module": [
-                        "lib/",
                         "class/"
                     ],
                     "Std": "class/",
-                    "Form": [
-                        "lib/",
+                    "Forms": [
                         "class/"
                     ]
                 },

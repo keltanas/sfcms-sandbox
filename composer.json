@@ -31,10 +31,10 @@
     ],
     "autoload" : {
         "psr-0" : {
-            "Module" : "lib/",
-            "Forms" : "lib/"
+            "Acme" : "lib/"
         }
     },
+    "target-dir": "lib",
     "scripts": {
         "post-install-cmd": [
             "Sfcms\\JqGrid\\ComposerHandler::installAssets"
