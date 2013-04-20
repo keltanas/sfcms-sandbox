@@ -1,10 +1,11 @@
 /.idea/
-/files/
-/thumbs/
-/images
-/misc
-/runtime
+/files*
+/thumbs*
+/images*
+/misc*
+/runtime/*
 /logger.txt
 /vendor/
 /static/
 composer.phar
+composer.lock

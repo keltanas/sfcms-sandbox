@@ -31,10 +31,9 @@ return array(
         'login'     => 'siteforever',
         'password'  => 'siteforever',
         'host'      => 'localhost',
-        'database'  => 'siteforever_kronma',
+        'database'  => 'siteforever',
         'debug'     => true,
         'migration' => true,
-        //'autoGenerateMeta' => true,
     ),
 
     // тема
@@ -46,7 +45,6 @@ return array(
         'widgets'   => SF_PATH.DIRECTORY_SEPARATOR.'widgets',
         'ext'       => 'tpl', // расширение шаблонов
         'admin'     => SF_PATH.DIRECTORY_SEPARATOR.'themes'.DIRECTORY_SEPARATOR.'system', // каталог шаблонов админки
-        '404'       => 'error404', // шаблон страницы 404
     ),
 
     // настройки пользователей

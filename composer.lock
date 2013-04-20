@@ -154,13 +154,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/keltanas/SiteForeverCMS",
-                "reference": "4e92b6dec58d652dc2fef5bbff11de867fe36ccf"
+                "url": "https://github.com/keltanas/SiteForeverCMS.git",
+                "reference": "1a5c007818f9ec585dfc8cd4832d56d1599906d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/keltanas/SiteForeverCMS/zipball/4e92b6dec58d652dc2fef5bbff11de867fe36ccf",
-                "reference": "4e92b6dec58d652dc2fef5bbff11de867fe36ccf",
+                "url": "https://api.github.com/repos/keltanas/SiteForeverCMS/zipball/1a5c007818f9ec585dfc8cd4832d56d1599906d1",
+                "reference": "1a5c007818f9ec585dfc8cd4832d56d1599906d1",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                 "phpunit/phpunit": "3.7.*",
                 "phpunit/phpunit-mock-objects": "1.2.*"
             },
-            "time": "2013-02-05 10:55:36",
+            "time": "2013-02-18 20:58:24",
             "type": "library",
             "extra": {
                 "sfcms-static-dir": "static"
@@ -369,22 +369,22 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.12.1",
+            "version": "v1.12.2",
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.12.1"
+                "reference": "v1.12.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/v1.12.1.zip",
-                "reference": "v1.12.1",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.12.2",
+                "reference": "v1.12.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-15 20:03:52",
+            "time": "2013-02-09 18:21:53",
             "type": "library",
             "extra": {
                 "branch-alias": {

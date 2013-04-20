@@ -10,6 +10,6 @@ define('ROOT', __DIR__);
 require_once 'vendor/autoload.php';
 //require_once SF_PATH . '/class/App.php';
 
-$app = new App( array('protected/config/sandbox.php'));
+$app = new App( array('application/config.php'));
 $app->run();
 
