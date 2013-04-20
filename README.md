@@ -1,1 +1,1 @@
-This file was created by JetBrains PhpStorm (PhpStorm) PS-126.92 for binding GitHub repository
+==SiteForeverCMS sandbox project==
