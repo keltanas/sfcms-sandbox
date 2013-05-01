@@ -51,4 +51,6 @@ return array(
     'users' => array(
         'userdir' => DIRECTORY_SEPARATOR.'files',
     ),
+
+    'modules' => require_once 'modules.php',
 );

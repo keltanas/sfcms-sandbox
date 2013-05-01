@@ -1,13 +1,8 @@
 {
     "name": "keltanas/sandbox",
     "require": {
-        "keltanas/site-forever-cms": "dev-master",
         "php": ">=5.3.3",
-        "symfony/symfony": "2.1.*",
-        "smarty/smarty": "3.1.*",
-        "firephp/firephp-core": "dev-master",
-        "ccampbell/chromephp": "dev-master",
-        "tonytomov/jqGrid" : "4.4.4"
+        "keltanas/site-forever-cms": "dev-master"
     },
     "authors": [
         {
@@ -20,11 +15,11 @@
             "type":"package",
             "package":{
                 "name":"tonytomov/jqGrid",
-                "version":"4.4.4",
+                "version":"4.4",
                 "source":{
                     "type":"git",
                     "url":"https://github.com/tonytomov/jqGrid",
-                    "reference":"master"
+                    "reference":"tags/v4.4.5"
                 }
             }
         }
