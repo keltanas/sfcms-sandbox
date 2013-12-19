@@ -1,0 +1,7 @@
+imports:
+    - { resource: "app/services.yml" }
+    - { resource: "app/parameters.yml" }
+
+services:
+    order.form:
+        class: keltanas\Form\CustomOrderForm

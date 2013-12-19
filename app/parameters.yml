@@ -1,0 +1,30 @@
+# This file is auto-generated during the composer install
+parameters:
+    sitename: 'Интернет магазин Sandbox'
+    admin: example@gmail.com
+    url:
+        rewrite: true
+    cache:
+        class: Sfcms\Cache\CacheBlank
+        livecycle: 0
+    db_host: localhost
+    db_name: siteforever
+    db_login: root
+    db_password: ~
+    db_migration: true
+    db_debug: true
+    editor: ckeditor
+    language: ru
+    logging_handlers:
+        - '@rotating_handler'
+        - '@fire_handler'
+    mailer_transport: gmail
+    mailer_username: example@gmail.com
+    mailer_password: ~
+    mailer_host: ~
+    mailer_port: ~
+    mailer_security: ~
+    pager_template: pager_twbt
+    email_for_comments: example@gmail.com
+    template:
+        theme: sandbox

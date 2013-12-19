@@ -1,8 +1,11 @@
 {
     "name": "keltanas/sandbox",
+    "description": "Sandbox site",
+    "homepage": "http://siteforever.ru",
+    "license": "MIT",
     "require": {
         "php": ">=5.3.3",
-        "keltanas/site-forever-cms": "dev-master"
+        "keltanas/site-forever-cms": "0.5.*@dev"
     },
     "authors": [
         {
@@ -10,35 +13,44 @@
             "email": "keltanas@gmail.com"
         }
     ],
-    "repositories":[
+    "repositories": [
         {
-            "type":"package",
-            "package":{
-                "name":"tonytomov/jqGrid",
-                "version":"4.4",
-                "source":{
-                    "type":"git",
-                    "url":"https://github.com/tonytomov/jqGrid",
-                    "reference":"tags/v4.4.5"
+            "type": "package",
+            "package": {
+                "name": "tonytomov/jqGrid",
+                "version": "4.4",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/tonytomov/jqGrid",
+                    "reference": "tags/v4.4.5"
                 }
             }
         }
     ],
-    "autoload" : {
-        "psr-0" : {
-            "Acme" : "lib/"
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
         }
     },
-    "target-dir": "lib",
     "scripts": {
         "post-install-cmd": [
-            "Sfcms\\JqGrid\\ComposerHandler::installAssets"
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sfcms\\ComposerHandler::execute"
         ],
         "post-update-cmd": [
-            "Sfcms\\JqGrid\\ComposerHandler::installAssets"
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sfcms\\ComposerHandler::execute"
         ]
     },
+    "minimum-stability": "stable",
     "extra": {
-        "sfcms-static-dir" : "static"
+        "sfcms-static-dir": "static",
+        "branch-alias": {
+            "dev-master": "0.5"
+        },
+        "incenteev-parameters": {
+            "file": "app/parameters.yml",
+            "dist-file": "vendor/keltanas/site-forever-cms/app/parameters.yml.dist"
+        }
     }
 }

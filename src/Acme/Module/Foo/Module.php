@@ -17,7 +17,13 @@ class Module extends SfModule
      */
     public function config()
     {
-        return include_once __DIR__ . '/config.php';
+        return array(
+            'controllers' => array(
+                'foo'  => array(),
+            ),
+            'models'      => array(
+            ),
+        );
     }
 
 }

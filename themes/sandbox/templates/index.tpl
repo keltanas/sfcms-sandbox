@@ -14,7 +14,6 @@
         </div>
         <div class="span10">
             {block name="content"}
-                <h1>{$request->getTitle()}</h1>
                 {$response->getContent()}
             {/block}
         </div>
