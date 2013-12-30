@@ -10,21 +10,19 @@ parameters:
     db_host: localhost
     db_name: siteforever
     db_login: root
-    db_password: ~
+    db_password: null
     db_migration: true
-    db_debug: true
     editor: ckeditor
     language: ru
-    logging_handlers:
-        - '@rotating_handler'
-        - '@fire_handler'
     mailer_transport: gmail
     mailer_username: example@gmail.com
-    mailer_password: ~
-    mailer_host: ~
-    mailer_port: ~
-    mailer_security: ~
-    pager_template: pager_twbt
+    mailer_password: null
+    mailer_host: null
+    mailer_port: null
+    mailer_security: null
     email_for_comments: example@gmail.com
-    template:
-        theme: sandbox
+    template_theme: sandbox
+    template_pager: pager_twbt
+    robokassa_mrch_login: test
+    robokassa_merchant_pass1: test1
+    robokassa_merchant_pass2: test2

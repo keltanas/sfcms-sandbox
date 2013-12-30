@@ -1,8 +1,7 @@
 <?php
 /**
  * Version @version@
- * Точка входа для SiteForeverCMS
- * Этот файл вызывает сервер при запросах
+ * This is enter point to SiteForeverCMS
  */
 
 //корень сайта
@@ -11,5 +10,5 @@ define('ROOT', __DIR__);
 // автозагрузка классов
 require_once 'vendor/autoload.php';
 
-$app = new App('app/cfg/base.php', true);
+$app = new App('prod', false);
 $app->run();

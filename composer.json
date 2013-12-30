@@ -1,11 +1,10 @@
 {
-    "name": "keltanas/sandbox",
+    "name": "keltanas/siteforever-sandbox",
     "description": "Sandbox site",
     "homepage": "http://siteforever.ru",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.3",
-        "keltanas/site-forever-cms": "0.5.*@dev"
+        "keltanas/site-forever-cms": "0.6.*@dev"
     },
     "authors": [
         {
@@ -29,7 +28,6 @@
     ],
     "autoload": {
         "psr-0": {
-            "Acme": "src/"
         }
     },
     "scripts": {
@@ -46,7 +44,7 @@
     "extra": {
         "sfcms-static-dir": "static",
         "branch-alias": {
-            "dev-master": "0.5"
+            "dev-master": "0.6"
         },
         "incenteev-parameters": {
             "file": "app/parameters.yml",

@@ -18,23 +18,13 @@ php_value session.name              "sfid"
 php_value magic_quotes_gpc          off
 php_value register_globals          off
 
-# Protect build file
-<Files "build.xml">
-    Order allow,deny
-    Deny from all
-</Files>
-
 RewriteEngine on
 RewriteBase /
 
-# На запросы к php файлам кроме программы sxd выводить 404 Not found
-RewriteCond %{THE_REQUEST} !(sxd)
-RewriteRule ^(.*)\.php$ / [L,R=404]
-
 # Переписываем пути, если есть подозрение, что идет обращение к странице сайта
-RewriteCond %{REQUEST_FILENAME} !(php|ico|jpg|jpeg|png|gif|css|js)$
+RewriteCond %{REQUEST_FILENAME} !(php)$
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 
-RewriteRule ([^\?]*)$ ?route=$1 [L]
+RewriteRule ([^\?]*)$ /index_dev.php/$1 [L]
 
